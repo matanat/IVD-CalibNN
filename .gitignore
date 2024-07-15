@@ -165,5 +165,4 @@ cache/
 wandb/
 cache_reverese/
 plots/
-trained_models/
 results/
