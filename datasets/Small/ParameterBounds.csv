@@ -1,0 +1,3 @@
+C10Nucleus,C01Nucleus,C10Annulus,K1Annulus,K2Annulus,Kappa,K1Circ,K2Circ,K1Rad,K2Rad,FiberAngle,FiberAngleCirc,FiberAngleRad
+0.03,0.0075,0.065,1,10,0,-0.2,-0.2,-0.2,-0.2,7.5,0,0
+0.21,0.0525,0.455,50,200,0.33,0,0,0,0,52.5,0.3,0.2
