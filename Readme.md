@@ -2,6 +2,9 @@
 
 This repository contains the implementation of our paper. The project aims to reproduce the results presented in the paper and provide a reference implementation for further research and experimentation.
 
+![Figure](figures/pgd.png)
+Illustration of Projected Gradient Descent (PGD) in a $C_{10a}$ vs. $\kappa$ loss landscape. Only two input parameters are varied for illustration, while the others are fixed. The dashed box represents the feasible input parameter area. The black point indicates the current step's configuration, red points are local minima for specific load case and moment combinations, the blue point is the mean of these minima, and the green point shows the projected point within the feasible area.
+
 ## Abstract
 Accurate calibration of Finite Element (FE) models for intervertebral discs (IVD) is essential for their reliability and application in diagnosing and planning treatments for spinal conditions. Traditional calibration methods are time-consuming and computationally intensive, requiring iterative, derivative-free optimization algorithms that often take hours or days to converge. 
 
