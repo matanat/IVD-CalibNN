@@ -32,7 +32,7 @@ Here are the steps to use this repository:
 1. **Dataset**: The training set used to train our surrogate models and the synthetic test data can be found in the `/datasets` directory.
 2. **Model Checkpoint**: A checkpoint of the trained surrogate neural network is available in the `/trained_models` directory.
 3. **Model Training**: To train the surrogate models, refer to the `model_training.ipynb` notebook for the code and hyperparameters.
-4. **FE Model Calibration**: For an example code on how to calibrate experimental data, check out the `guided_search.ipynb` notebook.
+4. **FE Model Calibration**: For an example code on how to calibrate experimental data, check out the `pgd_calibration.ipynb` notebook.
 
 ### Citation
 
