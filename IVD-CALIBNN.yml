@@ -1,4 +1,4 @@
-name: neural_ivd
+name: IVD-CALIBNN
 channels:
   - pytorch
   - conda-forge
@@ -152,4 +152,4 @@ dependencies:
       - nbformat==5.9.2
       - referencing==0.33.0
       - rpds-py==0.18.0
-prefix: /Users/atad/miniconda3/envs/neural_ivd
+prefix: /Users/atad/miniconda3/envs/IVD-CALIBNN
