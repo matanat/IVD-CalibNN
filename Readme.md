@@ -1,16 +1,17 @@
-## Don't You (Project Around Discs)? Calibrating Intervertebral Disc Finite Element Model With a Neural Network Surrogate and Projected Gradient Descent
+## Don't You (Project Around Discs)? Neural Network Surrogate and Projected Gradient Descent for Calibrating an Intervertebral Disc Finite Element Model
 
-This repository contains the implementation of our paper. The project aims to reproduce the results presented in the paper and provide a reference implementation for further research and experimentation.
+Accurate calibration of finite element (FE) models of human intervertebral discs (IVDs) is essential for their reliability and application in diagnosing and planning treatments for spinal conditions. Traditional calibration methods are computationally intensive, requiring iterative, derivative-free optimization algorithms that often take hours or days to converge.
 
-![Figure](figures/pgd.png)
-Illustration of Projected Gradient Descent (PGD) in a $C_{10a}$ vs. $\kappa$ loss landscape. Only two input parameters are varied for illustration, while the others are fixed.
+This study addresses these challenges by introducing a novel, efficient, and effective calibration method for an L4-L5 IVD FE model using a neural network (NN) surrogate. The NN surrogate predicts simulation outcomes with high accuracy, outperforming other machine learning models, and significantly reduces the computational cost associated with traditional FE simulations. Next, a Projected Gradient Descent (PGD) approach guided by gradients of the NN surrogate is proposed to efficiently calibrate FE models. Our method explicitly enforces feasibility with a projection step, thus maintaining material bounds throughout the optimization process.
 
-## Abstract
-Accurate calibration of Finite Element (FE) models for intervertebral discs (IVD) is essential for their reliability and application in diagnosing and planning treatments for spinal conditions. Traditional calibration methods are time-consuming and computationally intensive, requiring iterative, derivative-free optimization algorithms that often take hours or days to converge. 
+The proposed method is evaluated against state-of-the-art Genetic Algorithm (GA) and inverse model baselines on synthetic and \textit{in vitro} experimental datasets. Our approach demonstrates superior performance on synthetic data, achieving a Mean Absolute Error (MAE) of 0.06 compared to the baselines’ MAE of 0.18 and 0.54, respectively. On experimental specimens, our method outperforms the baseline in 5 out of 6 cases. Most importantly, our approach reduces calibration time to under three seconds, compared to up to 8 days per sample required by traditional calibration. Such efficiency paves the way for applying more complex FE models, enabling accurate patient-specific simulations and advancing spinal treatment planning.
 
-This study addresses these challenges by introducing a novel, efficient, and effective calibration method for an L4L5 IVD FE model using a Neural Network (NN) surrogate model. The NN surrogate predicts simulation outcomes with high accuracy, significantly reducing the computational cost associated with traditional FE runs. A Projected Gradient Descent (PGD) approach guided by gradients of the NN surrogate is proposed to efficiently calibrate FE models. Our method explicitly enforces feasibility with a projection step, thus maintaining material bounds throughout the optimization process. 
-
-The proposed method is evaluated against a state-of-the-art Genetic Algorithm (GA) baseline on a synthetic dataset and real-world experimental measurements. Our approach demonstrates superior performance, achieving a mean $\mathcal{R}^2$ score of 0.99 on synthetic data while reducing calibration time. On experimental specimens, our method consistently outperforms the GA baseline in terms of Mean Absolute Error (MAE). However both methods show increased error at extreme moments due to FE model limitations. Future research will investigate alternative data generation techniques and improved FE models to more effectively manage patient-specific, variable geometries.
+### Method overview
+![Figure](figures/graphical_abstract.svg)
+Our developed method for calibrating an L4-L5 IVD FE model to match in vitro Range-of-Motion (RoM) measurements follows these steps:
+1. Create a dataset by sampling material parameters within feasible bounds and obtaining corresponding RoM values with FE simulations. 
+2. Train a neural network (NN) surrogate to minimize the Mean Absolute Error (MAE) between the predicted and simulated RoM. 
+3. Freeze the network weights and optimize the NN input parameters to match the predicted RoM to the experimental measurements. Projected Gradient Descent (PGD) ensures that the calibrated parameters remain within feasible bounds.
 
 ### Installation
 
@@ -42,7 +43,7 @@ Here are the steps to use this repository:
 If you use this code or find it helpful in your research, please consider citing our paper:
 
 ```
-@article{author2022paper,
+@article{atad2024ivd,
     title={Paper Title},
     author={Author, John and Co-Author, Jane},
     journal={Journal of Research},
