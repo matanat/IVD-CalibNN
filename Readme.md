@@ -43,15 +43,13 @@ Here are the steps to use this repository:
 If you use this code or find it helpful in your research, please consider citing our paper:
 
 ```
-@article{atad2024ivd,
-    title={Paper Title},
-    author={Author, John and Co-Author, Jane},
-    journal={Journal of Research},
-    year={2022},
-    volume={10},
-    number={2},
-    pages={100-120},
-    doi={10.1234/jr.2022.1234}
+@misc{atad2024ivd,
+    title={Don't You (Project Around Discs)? Neural Network Surrogate and Projected Gradient Descent for Calibrating an Intervertebral Disc Finite Element Model},
+    author={Matan Atad and Gabriel Gruber and Marx Ribeiro and Luis Fernando Nicolini and Robert Graf and Hendrik Möller and Kati Nispel and Ivan Ezhov and Daniel Rueckert and Jan S. Kirschke},
+    year={2024},
+    eprint={2408.06067},
+    archivePrefix={arXiv},
+    note={\url{https://arxiv.org/abs/2408.06067}}
 }
 ```
 
