@@ -44,7 +44,7 @@ If you use this code or find it helpful in your research, please consider citing
 
 ```
 @misc{atad2024ivd,
-    title={Don't You (Project Around Discs)? Neural Network Surrogate and Projected Gradient Descent for Calibrating an Intervertebral Disc Finite Element Model},
+    title={Neural Network Surrogate and Projected Gradient Descent for Fast and Reliable Finite Element Model Calibration: a Case Study on an Intervertebral Disc},
     author={Matan Atad and Gabriel Gruber and Marx Ribeiro and Luis Fernando Nicolini and Robert Graf and Hendrik Möller and Kati Nispel and Ivan Ezhov and Daniel Rueckert and Jan S. Kirschke},
     year={2024},
     eprint={2408.06067},
