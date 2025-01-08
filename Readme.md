@@ -40,7 +40,7 @@ Here are the steps to use this repository:
 
 ### Citation
 
-If you use this code or find it helpful in your research, please consider citing our paper:
+If you use this code or find it helpful in your research, please consider citing our [paper](https://doi.org/10.1016/j.compbiomed.2024.109646):
 
 ```
 @article{atad2025,
