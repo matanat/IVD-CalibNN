@@ -43,13 +43,16 @@ Here are the steps to use this repository:
 If you use this code or find it helpful in your research, please consider citing our paper:
 
 ```
-@misc{atad2024ivd,
-    title={Neural Network Surrogate and Projected Gradient Descent for Fast and Reliable Finite Element Model Calibration: a Case Study on an Intervertebral Disc},
-    author={Matan Atad and Gabriel Gruber and Marx Ribeiro and Luis Fernando Nicolini and Robert Graf and Hendrik Möller and Kati Nispel and Ivan Ezhov and Daniel Rueckert and Jan S. Kirschke},
-    year={2024},
-    eprint={2408.06067},
-    archivePrefix={arXiv},
-    note={\url{https://arxiv.org/abs/2408.06067}}
+@article{atad2025,
+title = {Neural network surrogate and projected gradient descent for fast and reliable finite element model calibration: A case study on an intervertebral disc},
+journal = {Computers in Biology and Medicine},
+volume = {186},
+pages = {109646},
+year = {2025},
+issn = {0010-4825},
+doi = {https://doi.org/10.1016/j.compbiomed.2024.109646},
+author = {Matan Atad and Gabriel Gruber and Marx Ribeiro and Luis Fernando Nicolini and Robert Graf and Hendrik Möller and Kati Nispel and Ivan Ezhov and Daniel Rueckert and Jan S. Kirschke},
+keywords = {Finite element model, Calibration, Surrogate, Neural network, Intervertebral disc},
 }
 ```
 
